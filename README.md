@@ -36,6 +36,8 @@ It also highlights three dynamic insights:
 **Lowest Funding Coverage**  
 **Biggest YoY Funding Decline**
 
+![Dashboard](assets/dashboard.png)
+
 ## Data Pipeline
  
 ```text
