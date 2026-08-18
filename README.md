@@ -80,16 +80,32 @@ The final analytical scope covers **2022–2026**.
 
 An obsolete 2022 plan record (`plan_id = 1081`) was excluded from the analysis.
 
-## Sector Classification
+## PostgreSQL Layer
 
-The FTS dataset also contains categories that do not represent individual humanitarian sectors, such as:
+I used PostgreSQL as the analytical layer between the raw FTS data and Power BI.
 
-- `Not specified`
-- `Multiple clusters/sectors (shared)`
-- `Multi-sector`
-- `Other`
+The dashboard connects to a prepared SQL view that defines the analysis scope and separates humanitarian sectors from technical funding categories.
 
-These records remain in the data but are excluded from sector comparisons where appropriate.
+```sql
+CREATE OR REPLACE VIEW public.funding_vs_requirements AS
+SELECT
+    plan_id,
+    year,
+    sector,
+    requirements,
+    funding,
+    CASE
+        WHEN sector IN ('Not specified', 'Multiple clusters/sectors (shared)')
+            THEN 'Unallocated'
+        WHEN sector = 'Multi-sector'
+            THEN 'Cross-sector'
+        WHEN sector = 'Other'
+            THEN 'Other'
+        ELSE 'Sector'
+    END AS sector_type
+FROM raw.requirements_funding_globalcluster
+WHERE year >= 2022;
+```
 
 I also shortened several sector names in Power BI to make the dashboard easier to read:
 
@@ -100,6 +116,7 @@ Protection - Gender-Based Violence → Gender-Based Violence
 Water Sanitation Hygiene → WASH
 Emergency Shelter and NFI → Shelter & NFI
 ```
+
 ## Tools
 
 - **PostgreSQL** — data storage, validation and analytical transformations
