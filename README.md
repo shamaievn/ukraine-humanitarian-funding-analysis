@@ -119,9 +119,9 @@ The repository also includes an animated GIF showing the main dashboard interact
 
 ## Data Source
 
-**OCHA Financial Tracking Service (FTS)**  
+**OCHA Financial Tracking Service (FTS)** 
 Dataset: *Ukraine — Requirements and Funding Data*  
-Available through the **Humanitarian Data Exchange (HDX)**.
+Available through the **Humanitarian Data Exchange (HDX)**[https://data.humdata.org/dataset/ukr-requirements-and-funding-data]
 
 Primary file used:
 
