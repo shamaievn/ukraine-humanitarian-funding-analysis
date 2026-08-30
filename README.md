@@ -4,6 +4,9 @@ An interactive Power BI project exploring how humanitarian funding in Ukraine co
 
 The project uses data from the **OCHA Financial Tracking Service (FTS)** and combines **PostgreSQL and Power BI** to move from raw humanitarian funding data to a cleaned analytical dataset and an interactive dashboard.
 
+### [View the interactive Tableau dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiMGYxNGIxOTctYjE3OC00NGMxLWI4MGItYWNiMzViOTYxZTg1IiwidCI6Ijk0YjQwY2YyLWU5NGUtNDA1Ny1hMmVkLWZiYmY1MjUzYjVlMCJ9)
+<sup>Please click the **Fit to page** button in the bottom-right corner.</sup>
+
 ![Dashboard demo](assets/dashboard_demo.gif)
 
 ## What I wanted to explore
@@ -123,16 +126,6 @@ Emergency Shelter and NFI → Shelter & NFI
 - **DBeaver** — SQL development and data quality checks
 - **Power BI** — data modelling, DAX and dashboard development
 - **Git / GitHub** — version control and project documentation
-
-
-## Dashboard Access
-
-A public interactive link to the Power BI dashboard is currently unavailable because I do not have access to the publishing options required for public sharing.
-
-Instead, I will attach the **Power BI `.pbix` file** separately, so the dashboard can be opened and explored locally in **Power BI Desktop**.
-
-The repository also includes an animated GIF showing the main dashboard interactions and filters.
-
 
 ## Data Source
 
