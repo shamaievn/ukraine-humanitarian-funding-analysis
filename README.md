@@ -5,7 +5,6 @@ An interactive Power BI project exploring how humanitarian funding in Ukraine co
 The project uses data from the **OCHA Financial Tracking Service (FTS)** and combines **PostgreSQL and Power BI** to move from raw humanitarian funding data to a cleaned analytical dataset and an interactive dashboard.
 
 ### [View the interactive Tableau dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiMGYxNGIxOTctYjE3OC00NGMxLWI4MGItYWNiMzViOTYxZTg1IiwidCI6Ijk0YjQwY2YyLWU5NGUtNDA1Ny1hMmVkLWZiYmY1MjUzYjVlMCJ9)
-<sup>Please click the **Fit to page** button in the bottom-right corner.</sup>
 
 ![Dashboard demo](assets/dashboard_demo.gif)
 
